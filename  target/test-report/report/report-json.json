@@ -1,0 +1,104 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 25188416100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUpTest()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "",
+        "description": "",
+        "id": "as-a-user-of-cthesigns-i-want-to-be-able-to-login-to-the-application-and-carryout-assessments-for-my-patients;",
+        "after": [
+          {
+            "result": {
+              "duration": 1943376500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 573883400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on CtheSigns Login page",
+            "match": {
+              "location": "LoginTest.i_am_on_CtheSigns_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 948125700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter my email into the Email field",
+            "match": {
+              "location": "LoginTest.i_enter_my_email_into_the_Email_field()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 520539100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter I enter my password into the password field",
+            "match": {
+              "location": "LoginTest.i_enter_I_enter_my_password_into_the_password_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1319848100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on the Login button",
+            "match": {
+              "location": "LoginTest.i_click_on_the_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1259547600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I should be signed into the application successfully",
+            "match": {
+              "location": "LoginTest.i_should_be_signed_into_the_application_successfully()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "As a user of CtheSigns I want to be able to login to the application and carryout assessments for my patients",
+    "description": "",
+    "id": "as-a-user-of-cthesigns-i-want-to-be-able-to-login-to-the-application-and-carryout-assessments-for-my-patients",
+    "keyword": "Feature",
+    "uri": "features/login.feature"
+  }
+]

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="31.753736">
+<testcase classname="As a user of CtheSigns I want to be able to login to the application and carryout assessments for my patients" name="" time="31.753736">
+<system-out><![CDATA[Given I am on CtheSigns Login page..........................................passed
+When I enter my email into the Email field..................................passed
+And I enter I enter my password into the password field.....................passed
+And I click on the Login button.............................................passed
+Then I should be signed into the application successfully...................passed
+]]></system-out>
+</testcase>
+</testsuite>
