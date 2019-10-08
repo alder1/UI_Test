@@ -28,6 +28,8 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
 
     }
+    @FindBy(xpath = "//div[@class='styledComponents__CookiesText-jDcQxk eTnqtP']")
+    private WebElement closeCookie;
 
     @FindBy(xpath = "//input[@name='email']")
     private WebElement mailField;
@@ -41,9 +43,10 @@ public class LoginPage {
     @FindBy(xpath = "//span[contains(text(),'noticeboard')]")
     private WebElement noticeBoard;
 
-//    public boolean assertLoginPage(){
-//        return message.isDisplayed();
-//    }
+
+    public void okCookie(){
+        closeCookie.click();
+    }
 
     public void enterMail(String myEmail) {
         mailField.sendKeys(myEmail);

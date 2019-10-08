@@ -20,7 +20,7 @@ public class LoginTest extends DriverInstance {
 
     @When("^I enter my email into the Email field$")
     public void i_enter_my_email_into_the_Email_field() throws Throwable {
-
+        lp.okCookie();
         lp.enterMail("test-sutton@email.com");
     }
 
