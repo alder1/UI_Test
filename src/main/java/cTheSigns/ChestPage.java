@@ -32,37 +32,11 @@ public class ChestPage {
     @FindBy(xpath = "//span[contains(text(),'Referral Pathway')]")
     private WebElement referralPathway;
 
-
-
-    //Scenario to validate Considerations
-
-    @FindBy(xpath = "//body/div[@id='app']/div/div[@class='styledComponents__StyledWrapper-kvYoPE kDzZnd']/div[@class='styledComponents__BodyWrapper-bsyRiV bEyKcQ']/div[@class='ContentWrapper__ContentWrapper-ebmCKp container ieefin']/div[@class='styledComponents__PageWrapper-iZXYYR OQFix']/div[@class='component-wrapper']/div/div/div[@class='styledComponents__PageWrapper-eoWmmr PeIWm']/div[@class='row']/div[@class='col-xs-12 col-md-push-5 col-md-7']/div[@class='styledComponents__IconsWrapper-cyeros gYoWse']/div[@class='row']/div[1]/div[1]/a[1]/button[1]/div[1]")
-    private WebElement system2;
-
-    @FindBy(xpath = "//input[@id='age']")
-    private WebElement age2;
-
-    @FindBy(xpath = "//label[@class='styledComponents__GenderLeft-jGoPES iFIGzJ']")
-    private WebElement gender2;
-
     @FindBy(xpath = "//label[contains(text(),'Finger clubbing')]")
     private WebElement fingerClubbing;
 
     @FindBy(xpath = "//span[contains(text(),'Referral Pathway')]")
     private WebElement referralPathway2;
-
-
-
-    //Scenario to validate patients does not meet criteria
-
-    @FindBy(xpath = "//body/div[@id='app']/div/div[@class='styledComponents__StyledWrapper-kvYoPE kDzZnd']/div[@class='styledComponents__BodyWrapper-bsyRiV bEyKcQ']/div[@class='ContentWrapper__ContentWrapper-ebmCKp container ieefin']/div[@class='styledComponents__PageWrapper-iZXYYR OQFix']/div[@class='component-wrapper']/div/div/div[@class='styledComponents__PageWrapper-eoWmmr PeIWm']/div[@class='row']/div[@class='col-xs-12 col-md-push-5 col-md-7']/div[@class='styledComponents__IconsWrapper-cyeros gYoWse']/div[@class='row']/div[1]/div[1]/a[1]/button[1]/div[1]")
-    private WebElement system3;
-
-    @FindBy(xpath = "//input[@id='age']")
-    private WebElement age3;
-
-    @FindBy(xpath = "//label[@class='styledComponents__GenderLeft-jGoPES iFIGzJ']")
-    private WebElement gender3;
 
     @FindBy(xpath = "//label[contains(text(),'Wheeze')]")
     private WebElement wheeze;

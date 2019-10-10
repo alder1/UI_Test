@@ -3,6 +3,8 @@ package com.CtheSigns.Step_definition;
 import cTheSigns.ChestPage;
 import cTheSigns.DriverInstance;
 import cTheSigns.LoginPage;
+import cucumber.api.PendingException;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -42,4 +44,39 @@ public class ChestTest extends DriverInstance {
 
     }
 
+    @And("^I select the gender male$")
+    public void iSelectTheGenderMale() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @And("^i select Finger clubbing$")
+    public void iSelectFingerClubbing() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @When("^I click on the Referral Pathway button$")
+    public void iClickOnTheReferralPathwayButton() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @Then("^the Results page should be displayed with Considerations$")
+    public void theResultsPageShouldBeDisplayedWithConsiderations() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @And("^I select Wheeze$")
+    public void iSelectWheeze() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
+
+    @Then("^the Results page should be displayed with patient does not meet the criteria$")
+    public void theResultsPageShouldBeDisplayedWithPatientDoesNotMeetTheCriteria() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
 }
