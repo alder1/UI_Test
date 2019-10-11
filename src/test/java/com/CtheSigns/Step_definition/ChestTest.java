@@ -16,12 +16,13 @@ public class ChestTest extends DriverInstance {
 
     @Given("^I select System button on the Home page$")
     public void i_select_System_button_on_the_Home_page() throws Throwable {
-       cp.clickSystem();
+       lp.clickSystemIcon();
+
     }
 
     @When("^I enter an adult age$")
     public void i_enter_an_adult_age() throws Throwable {
-        cp.setAge1();
+        cp.setAge();
     }
 
     @When("^I select a gender male$")
@@ -41,42 +42,36 @@ public class ChestTest extends DriverInstance {
 
     @Then("^the Results page should be displayed with Recommendations$")
     public void the_Results_page_should_be_displayed_with_Recommendations() throws Throwable {
-
+        cp.AssertRecommendationLungCancer();
     }
 
     @And("^I select the gender male$")
     public void iSelectTheGenderMale() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        cp.setAge();
     }
 
     @And("^i select Finger clubbing$")
     public void iSelectFingerClubbing() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        cp.clickFingerClubbing();
     }
 
     @When("^I click on the Referral Pathway button$")
     public void iClickOnTheReferralPathwayButton() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        cp.clickPathway1();
     }
 
     @Then("^the Results page should be displayed with Considerations$")
     public void theResultsPageShouldBeDisplayedWithConsiderations() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+       cp.AssertConsiderationLungCancer();
     }
 
     @And("^I select Wheeze$")
     public void iSelectWheeze() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        cp.clickWheeze();
     }
 
     @Then("^the Results page should be displayed with patient does not meet the criteria$")
     public void theResultsPageShouldBeDisplayedWithPatientDoesNotMeetTheCriteria() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        cp.AssertNotCriteria();
     }
 }

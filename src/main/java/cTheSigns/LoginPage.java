@@ -43,6 +43,11 @@ public class LoginPage {
     @FindBy(xpath = "//span[contains(text(),'noticeboard')]")
     private WebElement noticeBoard;
 
+    //validate System icon
+
+    @FindBy(xpath = "//body/div[@id='app']/div/div[@class='styledComponents__StyledWrapper-kvYoPE kDzZnd']/div[@class='styledComponents__BodyWrapper-bsyRiV bEyKcQ']/div[@class='ContentWrapper__ContentWrapper-ebmCKp container ieefin']/div[@class='styledComponents__PageWrapper-iZXYYR OQFix']/div[@class='component-wrapper']/div/div/div[@class='styledComponents__PageWrapper-eoWmmr PeIWm']/div[@class='row']/div[@class='col-xs-12 col-md-push-5 col-md-7']/div[@class='styledComponents__IconsWrapper-cyeros gYoWse']/div[@class='row']/div[1]/div[1]/a[1]/button[1]/div[1]")
+    private WebElement system;
+
 
     public void okCookie(){
         closeCookie.click();
@@ -66,6 +71,10 @@ public class LoginPage {
         return noticeBoard.isDisplayed();
 
 
+    }
+
+    public void clickSystemIcon(){
+        system.click();
     }
 }
 
