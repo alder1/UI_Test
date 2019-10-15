@@ -14,9 +14,18 @@ public class ChestTest extends DriverInstance {
     LoginPage lp = new LoginPage(driver);
     ChestPage cp = new ChestPage(driver);
 
-    @Given("^I select System button on the Home page$")
+    @Given("^I have successfully logged into CtheSigns application$")
+    public void i_have_successfully_logged_into_CtheSigns_application() throws Throwable {
+        lp.okCookie();
+        lp.enterMail("test-sutton@email.com");
+        lp.enterPassword("password");
+        lp.selectLoginButton();
+
+    }
+
+    @When("^I select System button on the Home page$")
     public void i_select_System_button_on_the_Home_page() throws Throwable {
-       lp.clickSystemIcon();
+        lp.clickSystemIcon();
 
     }
 
@@ -25,19 +34,20 @@ public class ChestTest extends DriverInstance {
         cp.setAge();
     }
 
-    @When("^I select a gender male$")
-    public void i_select_a_gender_male() throws Throwable {
+    @And("^I select the gender male$")
+    public void iSelectTheGenderMale() {
         cp.clickGender();
     }
+
 
     @When("^I select Suspected cancer on the chest x-ray$")
     public void i_select_Suspected_cancer_on_the_chest_x_ray() throws Throwable {
         cp.clickSuspectedCancer();
     }
 
-    @When("^I click on Referral Pathway button$")
-    public void i_click_on_Referral_Pathway_button() throws Throwable {
-        cp.clickPathway1();
+    @When("^I click on the Referral Pathway button$")
+    public void iClickOnTheReferralPathwayButton() {
+    cp.clickPathway1();
     }
 
     @Then("^the Results page should be displayed with Recommendations$")
@@ -45,33 +55,33 @@ public class ChestTest extends DriverInstance {
         cp.AssertRecommendationLungCancer();
     }
 
-    @And("^I select the gender male$")
-    public void iSelectTheGenderMale() throws Throwable {
-        cp.setAge();
-    }
 
     @And("^i select Finger clubbing$")
     public void iSelectFingerClubbing() throws Throwable {
         cp.clickFingerClubbing();
     }
 
-    @When("^I click on the Referral Pathway button$")
-    public void iClickOnTheReferralPathwayButton() throws Throwable {
-        cp.clickPathway1();
-    }
-
-    @Then("^the Results page should be displayed with Considerations$")
-    public void theResultsPageShouldBeDisplayedWithConsiderations() throws Throwable {
-       cp.AssertConsiderationLungCancer();
-    }
-
     @And("^I select Wheeze$")
     public void iSelectWheeze() throws Throwable {
         cp.clickWheeze();
     }
+    
+
+    @Then("^the Results page should be displayed with Considerations$")
+    public void theResultsPageShouldBeDisplayedWithConsiderations() throws Throwable {
+        cp.AssertConsiderationLungCancer();
+    }
+
+   
 
     @Then("^the Results page should be displayed with patient does not meet the criteria$")
     public void theResultsPageShouldBeDisplayedWithPatientDoesNotMeetTheCriteria() throws Throwable {
         cp.AssertNotCriteria();
+    }
+
+
+    @When("^I click on Referral Pathway button$")
+    public void iClickOnReferralPathwayButton() {
+
     }
 }
